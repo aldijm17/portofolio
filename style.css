@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    font-family: 'Jersey 10', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0099ff; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0099ff; 
+  }
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #414852;
+}
+
+.progress-bar {
+    transition: width 1.5s ease-in-out;
+    width: 0;
+    background-color: #0099ff ;
+    border-radius: 50px;
+    
+
+}
+h5 {
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.8);
+    border-radius: 50px;
+    background-color: #414852;
+}
+
+.nav-link {
+    position: relative;
+    color: #2c59ee; /* Text color */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: #14c2da; /* Underline color */
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #14c2da; /* Text color on hover */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    right: 0;
+}
+.jumbotron {
+    padding-top: 2rem;
+    background-color: #414852;  
+ 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 69%;
+    position: relative;
+    z-index: 1; /* Set a lower z-index than navbar */
+}
+
+.navbar {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: fixed; /* Make the navbar fixed to the top */
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.8);
+}
+section {
+    scroll-margin-top: 70px;    /* Adjust this value based on your navbar height */
+  }
+    
+    
+
+#about{
+    background-color: #414852;  
+    margin-top: 100px ;
+}
+#about h2 {
+    color: #4d77ff;
+    margin-top: 20px;
+}
+.jumbotron h1{
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #4d77ff;
+    
+}
+.jumbotron img{
+    margin-top: 160px;
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.8);
+}
+#Projects{
+    background-color: #414852;
+    
+}
+#Projects h2{
+    margin-top: 70px;
+    color:#4d77ff ;
+}
+.card {
+    background-color: #414852;
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.8);
+}
+.card img{
+    height: 190px;
+    width: 100%;
+}
+#Projects .card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 75, 236, 0.384);
+}
+
+#Projects .card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#Projects .card img:hover {
+    transform: scale(1.05);
+}
+input,textarea, button{
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.8);
+}
+#Contact h2{
+    color:#4d77ff ;
+
+}
+.footer{
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.8);
+    
+}
+.footer a {
+    margin: 10px;
+}
+
